@@ -70,7 +70,7 @@
       <section class="effect">
         <div class="container">
           <h1 class="effect-title">Effective Solutions for Your Business</h1>
-          <button class="effect-btn" type="button">Order Service</button>
+          <button class="effect-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- #endregion section-1 -->
@@ -494,9 +494,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -584,5 +584,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

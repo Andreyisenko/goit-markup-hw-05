@@ -478,7 +478,7 @@ footer {
   border: 1px solid #fff;
   border-radius: 4px;
   padding-left: 16px;
-  width: 264px;
+  min-width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   outline: none;
