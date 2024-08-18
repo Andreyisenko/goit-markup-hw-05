@@ -474,9 +474,10 @@ footer {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  background-color: #2e2f42;
+  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -505,7 +506,7 @@ footer {
 }
 
 .btn-subscribe {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -518,7 +519,7 @@ footer {
   color: #fff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -528,6 +529,14 @@ footer {
 .btn-subscribe:hover,
 .btn-subscribe:focus {
   background-color: #31d0aa;
+}
+
+.icon-btn-foot {
+  margin-left: 16px;
+}
+.form-email-foot {
+  display: flex;
+  gap: 24px;
 }
 
 .backdrop {
@@ -672,16 +681,6 @@ footer {
   display: block;
 }
 
-.modal-lable-coment {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 4px;
-  display: block;
-}
-
 .modal-msg {
   font-weight: 400;
   font-size: 12px;
@@ -697,6 +696,7 @@ footer {
   outline: transparent;
   background-color: transparent;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-msg:focus {
@@ -780,12 +780,11 @@ footer {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submut:hover,
